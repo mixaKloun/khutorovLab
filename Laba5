@@ -1,0 +1,196 @@
+#include <iostream>
+using namespace std;
+int main() {
+	setlocale(0, "");
+	cout << "[+]Переводчик\n";
+	cout << "[1]Русские слова\n";
+	cout << "[2]Ангийские слова\n";
+	cout << "[3]Выход\n";
+
+	int tran;
+	cin >> tran;
+	switch (tran) {
+	case 1:
+		system("cls");
+		cout << "Русские слова\n\n";
+		cout << "[1]Машина\n";
+		cout << "[2]Мяч\n";
+		cout << "[3]Мозг\n";
+		cout << "[4]Склад\n";
+		cout << "[5]Символы\n";
+		cout << "[6]Бежать\n";
+		cout << "[7]Кормить\n";
+		cout << "[8]Сильный\n";
+		cout << "[9]Монитор\n";
+		cout << "[10]Мышь\n";
+		cout << "[11]Играть\n";
+		cout << "[12]Лента\n";
+		cout << "[13]Человек\n";
+		cout << "[14]Бить\n";
+		cout << "[15]Карта\n";
+		int rus;
+		cin >> rus;
+		break;
+		switch (rus) {
+		case 1:
+			cout << "Машина -> Car\n";
+			break;
+		case 2:
+			system("cls");
+			cout << "Мяч -> Ball\n";
+			break;
+		case 3:
+			system("cls");
+			cout << "Мозг -> Brain\n";
+			break;
+		case 4:
+			system("cls");
+			cout << "Склад -> Storage\n";
+			break;
+		case 5:
+			system("cls");
+			cout << "Символы -> Symbols\n";
+			break;
+		case 6:
+			system("cls");
+			cout << "Бежать -> Run\n";
+			break;
+		case 7:
+			system("cls");
+			cout << "Кормить -> Feed\n";
+			break;
+		case 8:
+			system("cls");
+			cout << "Сильный -> Strong\n";
+			break;
+		case 9:
+			system("cls");
+			cout << "Монитор -> Monitor\n";
+			break;
+		case 10:
+			system("cls");
+			cout << "Мышь -> Mouse\n";
+			break;
+		case 11:
+			system("cls");
+			cout << "Играть -> Play\n";
+			break;
+		case 12:
+			system("cls");
+			cout << "Лента -> Tape\n";
+			break;
+		case 13:
+			system("cls");
+			cout << "Человек -> Hyman\n";
+			break;
+		case 14:
+			system("cls");
+			cout << "Бить -> Hit\n";
+			break;
+		case 15:
+			system("cls");
+			cout << "Карта -> Card\n";
+			break;
+		default:
+			system("cls");
+			cout << "Нет такого значения";
+			break;
+		}
+	break;
+
+	case 2:
+		cout << "Английские слова\n\n";
+		cout << "[1]Car\n";
+		cout << "[2]Ball\n";
+		cout << "[3]Brain\n";
+		cout << "[4]Storage\n";
+		cout << "[5]Symbols\n";
+		cout << "[6]Run\n";
+		cout << "[7]Feed\n";
+		cout << "[8]Strong\n";
+		cout << "[9]Monitor\n";
+		cout << "[10]Mouse\n";
+		cout << "[11]Play\n";
+		cout << "[12]Tape\n";
+		cout << "[13]Human\n";
+		cout << "[14]Hit\n";
+		cout << "[15]Card\n";
+		int ang;
+		cin >>ang;
+		switch (ang) {
+		case 1:
+			system("cls");
+			cout << "Car -> Машина\n";
+			break;
+		case 2:
+			system("cls");
+			cout << "Ball -> Мяч\n";
+			break;
+		case 3:
+			system("cls");
+			cout << "Brain -> Мозг\n";
+			break;
+		case 4:
+			system("cls");
+			cout << "Storage -> Склад\n";
+			break;
+		case 5:
+			system("cls");
+			cout << "Symbols -> Символы\n";
+			break;
+		case 6:
+			system("cls");
+			cout << "Run -> Бежать\n";
+			break;
+		case 7:
+			system("cls");
+			cout << "Feed -> Кормить\n";
+			break;
+		case 8:
+			system("cls");
+			cout << "Strong -> Сильный\n";
+			break;
+		case 9:
+			system("cls");
+			cout << "Monitor -> Монитор\n";
+			break;
+		case 10:
+			system("cls");
+			cout << "Mouse -> Мышь\n";
+			break;
+		case 11:
+			system("cls");
+			cout << "Play -> Играть\n";
+			break;
+		case 12:
+			system("cls");
+			cout << "Tape -> Лента\n";
+			break;
+		case 13:
+			system("cls");
+			cout << "Human -> Человек\n";
+			break;
+		case 14:
+			system("cls");
+			cout << "Hit -> Бить\n";
+			break;
+		case 15:
+			system("cls");
+			cout << "Card -> Карта\n";
+			break;
+		default:
+			system("cls");
+			cout << "Нет такого значения";
+			break;
+		}
+	break;
+
+	case 3:
+		return 0;
+		break;
+	default:
+		cout << "Нет такого действия";
+		break;
+	}
+
+}
