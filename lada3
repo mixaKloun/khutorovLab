@@ -1,0 +1,42 @@
+#include <iostream>
+#define orange system("color 06")
+using namespace std;
+
+double calc(double num1, double num2, char operation) {
+	switch (operation) {
+	case '+':
+		return num1 + num2;
+	case '-':
+		return num1 - num2;
+	case '/':
+		if (num2 != 0) {
+			return num1 / num2;
+		}
+		else {
+			cout << "На ноль делить плохая идея";
+		}
+	case '*':
+		return num1 * num2;
+
+
+
+
+
+	default:
+		cout << "ОЙ";
+	}
+}
+void main() {
+	orange;
+	setlocale(0, "");
+	double num1, num2;
+	char operation;
+	cout << "[+]Калькулятор\n\n";
+	cout << "[&]Введите превое число: ";
+	cin >> num1;
+	cout << "[&]Введите второе число: ";
+	cin >> num2;
+	cout << "[&]Введите оператор: ";
+	cin >> operation;
+	cout << "Ваш ответ: " << calc( num1, num2, operation) ;
+}
