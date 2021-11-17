@@ -1,0 +1,133 @@
+#include<iostream>
+#include <windows.h>
+#define red system("color 40")
+#define blue system("color 0B")
+#define clear system("cls")
+#define ru setlocale(0,"")
+#define freez Sleep(2500);
+using namespace std;
+
+void square() {
+	ru;
+	const int arr = 5;
+	const int grr = 7;
+	int square[arr][grr]{
+		{1,1,1,1,1,1,1},
+		{1,0,0,0,0,0,1},
+		{1,0,0,0,0,0,1},
+		{1,0,0,0,0,0,1},
+	    {1,1,1,1,1,1,1},
+	};
+	for (int i = 0; i < arr; i++) {
+		for (int j = 0; j < grr; j++) {
+			if (square[i][j] == 1) {
+				cout << "#";
+			}
+			else {
+				cout << " ";
+			}
+		}
+		cout << endl;
+	}
+	freez;
+}
+void coutHi() {
+	cout << "Привет, я функция!";
+	freez;
+}
+void sizeBool() {
+	bool bmv_kryto;
+	cout << "int весит " << sizeof(bmv_kryto) << " байт";
+	freez;
+}
+void sizeFloat() {
+	float bmv_kryto;
+	cout << "float весит " << sizeof(bmv_kryto) << " байта";
+	freez;
+}
+void sizeDoble() {
+	double bmv_kryto;
+	cout << "int весит " << sizeof(bmv_kryto) << " байтов";
+	freez;
+}
+void sizeChar() {
+	char bmv_kryto;
+	cout << "int весит " << sizeof(bmv_kryto) << " байт";
+	freez;
+}
+void sizeInt() {
+	int bmv_kryto;
+	cout << "int весит " << sizeof(bmv_kryto) << " байта";
+	freez;
+}
+void colorShrift() {
+	blue;
+}
+void colorFon() {
+	red;
+}
+void clearConsole() {
+	clear;
+}
+void main() {
+	ru;
+	cout << "[+] Программа - {функиции}\n\n"
+		<< "[1] Очистить консоль\n"
+		<< "[2] Изменить цвет фона\n"
+		<< "[3] Изменить цвет шрифта\n"
+		<< "[4] Ввод размера типа данных INT\n"
+		<< "[5] Ввод размера типа данных CHAR\n"
+		<< "[6] Ввод размера типа данных DOUBLE\n"
+		<< "[7] Ввод размера типа данных FLOAT\n"
+		<< "[8] Ввод размера типа данных BOOL\n"
+		<< "[9] Вывести текст\n"
+		<< "[10] Квадрат 5х5\n";
+	cout << "[+] Выберите действие: ";
+	int femka;
+	cin >> femka;
+	switch (femka) {
+	case 1: 
+		clearConsole();
+		break;
+	case 2:
+		colorFon();
+		break;
+	case 3:
+		colorShrift();
+		break;
+	case 4:
+		sizeInt();
+		break;
+	case 5:
+		sizeChar();
+		break;
+	case 6:
+		sizeDoble();
+		break;
+	case 7:
+		sizeFloat();
+		break;
+	case 8:
+		sizeBool();
+		break;
+	case 9:
+		coutHi();
+		break;
+	case 10:
+		clear;
+		square();
+		cout << "\n";
+		square();
+		cout << "\n";
+		square();
+		break;
+	default:
+		cout << "\n[+] Такого действия нет";
+		freez;
+		main();
+		break;
+	}
+	clear;
+	main();
+	int _; cin >> _;
+}
