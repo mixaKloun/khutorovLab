@@ -1,0 +1,108 @@
+#include <iostream>
+#include <Windows.h>
+#define clear system("cls")
+using namespace std;
+int main();
+
+void Settings() {
+	clear;
+	cout << "[+] Настройки\n\n";
+	cout << "[1] Выбрать цвет\n";
+	cout << "[2] Сетка\n";
+	cout << "[3] Вернуться в меню\n";
+	cout << "[4] Выбор хода\n\n";
+	cout << "[+] Введите номер: ";
+	int SettingsChoise;
+	cin >> SettingsChoise;
+	cout << "\n\n";
+	switch (SettingsChoise){
+	case 1:
+		clear;
+		cout << "[+] Цвет на выбор\n\n";
+		cout << "[1] Синий \n";
+		cout << "[2] Зелёный \n";
+		cout << "[3] Голубой \n";
+		cout << "[4] Красный \n";
+		cout << "[+] Введите номер: ";
+		int Color;
+		cin >> Color;
+		switch (Color) {
+		case 1:
+			system("color 01");
+			Settings();
+			break;
+		case 2:
+			system("color 02");
+			Settings();
+			break;
+		case 3:
+			system("color 03");
+			Settings();
+			break;
+		case 4:
+			system("color 04");
+			Settings();
+			break;
+		default:
+			break;
+		}
+		break;
+	case 2:
+		cout << "[+] Выбор сетки\n\n";
+		cout << "[1] 3 x 3 \n";
+		cout << "[2] 4 x 4 \n";
+		cout << "[3] 5 x 5 \n";
+		break;
+	case 3:
+		clear;
+		main();
+		break;
+	case 4:
+		break;
+	default:
+		cout << " Ошибка";
+		break;
+	}
+}
+int main() {
+	setlocale(0, "");
+	clear;
+	cout << "[+] Крестики-нолики\n\n";
+	cout << "[1] Играть\n";
+	cout << "[2] Настройки\n";
+	cout << "[3] Правила\n";
+	cout << "[4] Выход\n\n";
+	cout << "[+] Введите номер: ";
+	int menu;
+	cin >> menu;
+	switch (menu) {
+	case 1:
+
+		break;
+	case 2:
+		Settings();
+		break;
+	case 3:
+		clear;
+		cout << "[+] Правила игры в Крестики-нолики\n\n";
+		cout << "[+] Цель игры победить соперника. Вы играете крестиками или ноликами(В настройках можно выбрать сторону).\n";
+		cout << "[+] Игроки по очереди ставят на свободные клетки поля 3Х3 знаки (один всегда крестики, другой всегда нолики).\n";
+		cout << "[+] Первый, выстроивший в ряд 3 своих фигуры по вертикали, горизонтали или диагонали, выигрывает.\n[+] Первый ход делает игрок, ставящий крестики.\n";
+		Sleep(6000);
+		Settings();
+		break;
+	case 4:
+		return 0;
+		break;
+	default:
+		return 0;
+		break;
+	}
+
+
+
+
+
+
+	return 0;
+}
